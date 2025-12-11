@@ -28,7 +28,7 @@
 <nav class="navbar">
 	<div class="nav-container">
 		<div class="nav-brand">
-			<a href="/" class="brand-link">
+			<a href="{`${base}/`}" class="brand-link">
 				<img src="/images/logo/TASK_Logo.png" alt="TASK Logo" class="brand-logo" />
 				<div class="brand-divider"></div>
 				<span class="brand-text">Task Karate Connect</span>
@@ -37,7 +37,7 @@
 
 		{#if $isAuthenticated}
 			<div class="nav-menu">
-				<a href="/" class="nav-link {$page.url.pathname === '/' ? 'active' : ''}" data-color="blue">
+				<a href="{`${base}/`}" class="nav-link {$page.url.pathname === '/' ? 'active' : ''}" data-color="blue">
 					<Home size={18} />
 					<span class="link-text">Dojo Wall</span>
 				</a>

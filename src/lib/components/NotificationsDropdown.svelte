@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	import { notifications, markNotificationAsRead } from '$lib/stores/social.js';
 	import Bell from '$lib/components/icons/Bell.svelte';
 	import Fistbump from '$lib/components/icons/Fistbump.svelte';

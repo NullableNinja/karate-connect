@@ -29,7 +29,7 @@
 	<div class="nav-container">
 		<div class="nav-brand">
 			<a href="{`${base}/`}" class="brand-link">
-				<img src="/images/logo/TASK_Logo.png" alt="TASK Logo" class="brand-logo" />
+				<img src="{`${base}/images/logo/TASK_Logo.png`}" alt="TASK Logo" class="brand-logo" />
 				<div class="brand-divider"></div>
 				<span class="brand-text">Task Karate Connect</span>
 			</a>

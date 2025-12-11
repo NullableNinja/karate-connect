@@ -41,22 +41,22 @@
 					<Home size={18} />
 					<span class="link-text">Dojo Wall</span>
 				</a>
-				<a href="/messages" class="nav-link {$page.url.pathname === '/messages' ? 'active' : ''}" data-color="green">
+				<a href="{`${base}/messages`}" class="nav-link {$page.url.pathname === '/messages' ? 'active' : ''}" data-color="green">
 					<Messages size={18} />
 					<span class="link-text">Messages</span>
 					{#if $unreadMessages > 0}
 						<span class="badge">{$unreadMessages}</span>
 					{/if}
 				</a>
-			<a href="/buddies" class="nav-link {$page.url.pathname === '/buddies' ? 'active' : ''}" data-color="purple">
+			<a href="{`${base}/buddies`}" class="nav-link {$page.url.pathname === '/buddies' ? 'active' : ''}" data-color="purple">
 				<Buddies size={18} />
 				<span class="link-text">Buddies</span>
 			</a>
-			<a href="/journey" class="nav-link {$page.url.pathname === '/journey' ? 'active' : ''}" data-color="gold">
+			<a href="{`${base}/journey`}" class="nav-link {$page.url.pathname === '/journey' ? 'active' : ''}" data-color="gold">
 				<Journal size={18} />
 				<span class="link-text">My Journey</span>
 			</a>
-			<a href="/events" class="nav-link {$page.url.pathname === '/events' ? 'active' : ''}" data-color="red">
+			<a href="{`${base}/events`}" class="nav-link {$page.url.pathname === '/events' ? 'active' : ''}" data-color="red">
 				<Events size={18} />
 				<span class="link-text">Events</span>
 			</a>
@@ -95,7 +95,7 @@
 			</div>
 		{:else}
 			<div class="nav-menu">
-				<a href="/login" class="nav-link btn btn-primary">Login</a>
+				<a href="{`${base}/login`}" class="nav-link btn btn-primary">Login</a>
 			</div>
 		{/if}
 	</div>

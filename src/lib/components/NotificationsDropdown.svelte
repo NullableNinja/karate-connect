@@ -73,7 +73,7 @@
 	</div>
 	
 	<div class="dropdown-footer">
-		<a href="/notifications" on:click={closeDropdown}>View All Notifications</a>
+		<a href="{`${base}/notifications`}" on:click={closeDropdown}>View All Notifications</a>
 	</div>
 </div>
 

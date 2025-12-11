@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 	import { login, isAuthenticated, getAllStudents } from '$lib/stores/auth.js';
 	import LoginTile from '$lib/components/LoginTile.svelte';
 	import PinModal from '$lib/components/PinModal.svelte';
@@ -90,7 +91,7 @@
 		const result = await login(selectedStudent.id, studentPinInput);
 		if (result.success) {
 			showStudentPin = false;
-			goto('/', { replaceState: true });
+			goto(`${base}/`, { replaceState: true });
 		} else {
 			pinError = "Incorrect PIN — try again.";
 		}
@@ -132,13 +133,13 @@
 	async function performLogin(studentId, pin) {
 		const result = await login(studentId, pin);
 		if (result.success) {
-			goto('/', { replaceState: true });
+			goto(`${base}/`, { replaceState: true });
 		}
 	}
 	
 	onMount(() => {
 		if ($isAuthenticated) {
-			goto('/', { replaceState: true });
+			goto(`${base}/`, { replaceState: true });
 			return;
 		}
 		allStudents = getAllStudents();

@@ -1,4 +1,5 @@
 import { writable } from 'svelte/store';
+import { base } from '$app/paths';
 import { browser } from '$app/environment';
 import studentsData from '$lib/data/students.json';
 
@@ -49,7 +50,7 @@ export function logout() {
 	isAuthenticated.set(false);
 	if (browser) {
 		localStorage.removeItem('tk-social-user');
-		window.location.href = '/login';
+		window.location.href = `${base}/login`;
 	}
 }
 

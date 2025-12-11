@@ -3,6 +3,7 @@
 	import { currentUser, isAuthenticated, logout } from '$lib/stores/auth.js';
 	import { unreadMessages, unreadNotifications } from '$lib/stores/social.js';
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 	import Home from '$lib/components/icons/Home.svelte';
 	import Messages from '$lib/components/icons/Messages.svelte';
 	import Buddies from '$lib/components/icons/Buddies.svelte';
@@ -63,7 +64,7 @@
 				<div class="nav-user">
 					<button 
 						class="user-info" 
-						on:click={() => goto('/profile')}
+						on:click={() => goto(`${base}/profile`)}
 						aria-label="Go to profile"
 					>
 						<img src={$currentUser.avatar} alt={$currentUser.name} class="user-avatar" />

@@ -1,0 +1,299 @@
+/* Base styles for Task Karate Connect - Material Design inspired */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+	/* Primary colors - Bold and striking like Cobra Kai */
+	--tk-primary: #3b82f6;
+	--tk-primary-dark: #2563eb;
+	--tk-primary-light: #60a5fa;
+	--tk-secondary: #8b5cf6;
+	--tk-success: #22c55e;
+	--tk-warning: #f59e0b;
+	--tk-danger: #ef4444;
+	
+	/* Dark theme colors - Sleek and modern */
+	--bg-primary: #0f172a;
+	--bg-secondary: #1e293b;
+	--bg-tertiary: #334155;
+	--text-primary: #f1f5f9;
+	--text-secondary: #94a3b8;
+	--text-muted: #64748b;
+	--border-color: #334155;
+	
+	/* Material Design elevations */
+	--elevation-1: 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.12);
+	--elevation-2: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+	--elevation-4: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+	--elevation-8: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+	
+	/* Social specific */
+	--feed-bg: rgba(30, 41, 59, 0.6);
+	--card-bg: rgba(30, 41, 59, 0.7);
+	--hover-bg: rgba(59, 130, 246, 0.1);
+	
+	/* Typography - Match main site EXACTLY (Inter + Bebas Neue) */
+	--font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+	--font-display: "Bebas Neue", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+	--font-mono: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, "Courier New", monospace;
+	
+	/* Transitions - Material Design timing */
+	--transition-standard: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	--transition-emphasized: 0.4s cubic-bezier(0.0, 0, 0.2, 1);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: var(--bg-primary);
+	color: var(--text-primary);
+	line-height: 1.6;
+	font-family: var(--font-sans);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	/* Prevent horizontal scroll on mobile */
+	overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-display);
+	font-weight: 900;
+	letter-spacing: -0.025em;
+	line-height: 1.25;
+}
+
+button {
+	cursor: pointer;
+	font-family: inherit;
+	/* Touch-friendly tap targets */
+	-webkit-tap-highlight-color: transparent;
+}
+
+input, textarea {
+	font-family: inherit;
+	/* Improve touch input */
+	font-size: 16px; /* Prevents zoom on iOS */
+}
+
+/* Utility classes */
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 1rem;
+	width: 100%;
+}
+
+.card {
+	background: var(--card-bg);
+	border: 1px solid var(--border-color);
+	border-radius: 8px;
+	padding: 1.5rem;
+	backdrop-filter: blur(12px);
+	/* Material Design elevation with striking edge */
+	box-shadow: 
+		var(--elevation-2),
+		0 0 0 1px rgba(59, 130, 246, 0.1);
+	transition: all var(--transition-standard);
+	position: relative;
+}
+
+.card:hover {
+	box-shadow: 
+		var(--elevation-4),
+		0 0 0 1px rgba(59, 130, 246, 0.2),
+		0 0 20px rgba(59, 130, 246, 0.1);
+	border-color: rgba(59, 130, 246, 0.3);
+}
+
+/* Edgy accent line - Cobra Kai style */
+.card::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 4px;
+	height: 100%;
+	background: linear-gradient(180deg, var(--tk-primary), var(--tk-secondary));
+	border-radius: 8px 0 0 8px;
+	opacity: 0;
+	transition: opacity var(--transition-standard);
+}
+
+.card:hover::before {
+	opacity: 1;
+}
+
+.btn {
+	padding: 0.75rem 1.5rem;
+	border: none;
+	border-radius: 8px;
+	font-weight: 600;
+	font-size: 1rem;
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	transition: all var(--transition-standard);
+	box-shadow: var(--elevation-2);
+	min-height: 44px; /* Touch-friendly */
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+.btn::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.2);
+	transform: translate(-50%, -50%);
+	transition: width 0.6s, height 0.6s;
+}
+
+.btn:active::before {
+	width: 300px;
+	height: 300px;
+}
+
+.btn-primary {
+	background: linear-gradient(135deg, var(--tk-primary), var(--tk-primary-dark));
+	color: white;
+	border: 1px solid var(--tk-primary-light);
+}
+
+.btn-primary:hover {
+	background: linear-gradient(135deg, var(--tk-primary-dark), var(--tk-primary));
+	box-shadow: 
+		var(--elevation-4),
+		0 0 20px rgba(59, 130, 246, 0.4);
+	transform: translateY(-2px);
+}
+
+.btn-primary:active {
+	transform: translateY(0);
+}
+
+.btn-secondary {
+	background: var(--bg-tertiary);
+	color: var(--text-primary);
+	border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+	background: var(--hover-bg);
+	border-color: var(--tk-primary);
+	box-shadow: var(--elevation-2);
+}
+
+/* Custom Scrollbar Theming */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: rgba(100, 116, 139, 0.5) rgba(15, 23, 42, 0.3);
+}
+
+*::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+	background: rgba(15, 23, 42, 0.3);
+	border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+	background: rgba(100, 116, 139, 0.5);
+	border-radius: 10px;
+	border: 2px solid rgba(15, 23, 42, 0.3);
+	transition: background 0.3s ease;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+	background: rgba(148, 163, 184, 0.7);
+}
+
+*::-webkit-scrollbar-thumb:active {
+	background: rgba(59, 130, 246, 0.6);
+}
+
+/* Animations - Material Design motion */
+@keyframes fadeIn {
+	from { 
+		opacity: 0; 
+		transform: translateY(20px);
+	}
+	to { 
+		opacity: 1; 
+		transform: translateY(0);
+	}
+}
+
+.fade-in {
+	animation: fadeIn 0.4s cubic-bezier(0.0, 0, 0.2, 1);
+}
+
+/* Ripple effect for tap interactions */
+@keyframes ripple {
+	0% {
+		transform: scale(0);
+		opacity: 0.5;
+	}
+	100% {
+		transform: scale(4);
+		opacity: 0;
+	}
+}
+
+.tap-ripple {
+	position: fixed;
+	pointer-events: none;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: radial-gradient(circle, rgba(59, 130, 246, 0.3) 0%, rgba(139, 92, 246, 0.2) 50%, transparent 70%);
+	animation: ripple 0.6s ease-out;
+	z-index: 9999;
+}
+
+/* Responsive - Material Design breakpoints */
+@media (max-width: 599px) {
+	.container {
+		padding: 0 0.75rem;
+	}
+	
+	.card {
+		padding: 1rem;
+		border-radius: 6px;
+	}
+	
+	.btn {
+		padding: 0.625rem 1.25rem;
+		font-size: 0.9375rem;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 904px) {
+	.container {
+		padding: 0 1.5rem;
+	}
+}
+
+@media (min-width: 905px) and (max-width: 1239px) {
+	.container {
+		padding: 0 2rem;
+	}
+}
+
+@media (min-width: 1240px) {
+	.container {
+		padding: 0 2.5rem;
+	}
+}

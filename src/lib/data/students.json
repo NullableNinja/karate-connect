@@ -1,0 +1,534 @@
+{
+  "students": [
+    {
+      "id": "ann-yehle",
+      "name": "Ann Yehle",
+      "displayName": "Ann Yehle",
+      "rank": "3rd Degree Black Belt",
+      "rankType": "degree",
+      "is3Level": 12,
+      "role": "instructor",
+      "pin": "1234",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Ann",
+      "birthday": "1985-05-12",
+      "joinDate": "2005-03-01",
+      "totalClasses": 2847,
+      "yearsAtRank": 3.5,
+      "yearsRequired": 4,
+      "bio": "Lead instructor and IS3 Level 12. Passionate about developing future leaders.",
+      "badges": [
+        {"name": "Master Instructor", "level": "Diamond", "description": "10+ years teaching experience"},
+        {"name": "IS3 Elite", "level": "Diamond", "description": "Achieved IS3 Level 12"},
+        {"name": "Leadership Legend", "level": "Diamond", "description": "Trained 100+ black belts"}
+      ],
+      "goldStars": [
+        {"name": "Dojo Spirit Award", "date": "2024-11-15"},
+        {"name": "Perfect Attendance - 2024", "date": "2024-12-01"}
+      ]
+    },
+    {
+      "id": "anne-markos",
+      "name": "Anne Markos",
+      "displayName": "Anne Markos",
+      "rank": "4th Degree Black Belt",
+      "rankType": "degree",
+      "is3Level": 0,
+      "role": "assistant",
+      "pin": "1234",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=AnneM",
+      "birthday": "1982-09-20",
+      "joinDate": "2003-01-15",
+      "totalClasses": 3124,
+      "yearsAtRank": 4.2,
+      "yearsRequired": 5,
+      "bio": "Senior instructor specializing in advanced techniques and competition training.",
+      "badges": [
+        {"name": "Master Instructor", "level": "Diamond", "description": "10+ years teaching experience"},
+        {"name": "Competition Champion", "level": "Gold", "description": "Multiple tournament victories"},
+        {"name": "Technique Master", "level": "Gold", "description": "Advanced forms specialist"}
+      ],
+      "goldStars": [
+        {"name": "Regional Champion 2023", "date": "2023-08-20"},
+        {"name": "Instructor Excellence", "date": "2024-06-10"}
+      ]
+    },
+    {
+      "id": "thomas-bryant",
+      "name": "Thomas Bryant",
+      "displayName": "Thomas Bryant",
+      "rank": "Black Belt",
+      "rankType": "degree",
+      "is3Level": 3,
+      "role": "assistant",
+      "pin": "1234",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Thomas",
+      "birthday": "1995-03-08",
+      "joinDate": "2010-06-15",
+      "totalClasses": 1456,
+      "yearsAtRank": 2.1,
+      "yearsRequired": 2,
+      "bio": "Assistant instructor focusing on youth development and character building.",
+      "badges": [
+        {"name": "Youth Mentor", "level": "Gold", "description": "Exceptional with kids classes"},
+        {"name": "IS3 Achiever", "level": "Silver", "description": "Reached IS3 Level 3"},
+        {"name": "Dedication Award", "level": "Gold", "description": "Never missed a class in 2 years"}
+      ],
+      "goldStars": [
+        {"name": "Student of the Year 2023", "date": "2023-12-15"},
+        {"name": "Teaching Excellence", "date": "2024-09-05"}
+      ]
+    },
+    {
+      "id": "grace-loizzi",
+      "name": "Grace Loizzi",
+      "displayName": "Grace Loizzi",
+      "rank": "2nd Degree Black Belt",
+      "rankType": "degree",
+      "is3Level": 0,
+      "role": null,
+      "pin": "1234",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Grace",
+      "birthday": "1990-11-22",
+      "joinDate": "2008-04-10",
+      "totalClasses": 1823,
+      "yearsAtRank": 1.8,
+      "yearsRequired": 2,
+      "bio": "Dedicated practitioner with a focus on precision and technique.",
+      "badges": [
+        {"name": "Forms Master", "level": "Gold", "description": "Perfect form execution"},
+        {"name": "Black Belt Elite", "level": "Gold", "description": "2nd Degree achievement"},
+        {"name": "Consistency King", "level": "Silver", "description": "5 years perfect attendance"}
+      ],
+      "goldStars": [
+        {"name": "Form Competition Winner", "date": "2024-03-12"},
+        {"name": "Technique Excellence", "date": "2024-07-20"}
+      ]
+    },
+    {
+      "id": "joseph-mattison",
+      "name": "Joseph Mattison",
+      "displayName": "Joseph Mattison",
+      "rank": "2nd Degree Black Belt",
+      "rankType": "degree",
+      "is3Level": 3,
+      "role": null,
+      "pin": "1234",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Joseph",
+      "birthday": "1988-07-14",
+      "joinDate": "2006-09-20",
+      "totalClasses": 1967,
+      "yearsAtRank": 2.3,
+      "yearsRequired": 2,
+      "bio": "IS3 Level 3 practitioner focused on continuous improvement.",
+      "badges": [
+        {"name": "IS3 Achiever", "level": "Silver", "description": "Reached IS3 Level 3"},
+        {"name": "Black Belt Elite", "level": "Gold", "description": "2nd Degree achievement"},
+        {"name": "Sparring Champion", "level": "Gold", "description": "Tournament winner"}
+      ],
+      "goldStars": [
+        {"name": "IS3 Milestone", "date": "2024-05-15"},
+        {"name": "Sparring Excellence", "date": "2024-10-08"}
+      ]
+    },
+    {
+      "id": "emma-thompson",
+      "name": "Emma Thompson",
+      "displayName": "Emma Thompson",
+      "rank": "Green Belt",
+      "rankType": "stripe",
+      "is3Level": null,
+      "role": null,
+      "pin": "1234",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Emma",
+      "birthday": "2013-03-15",
+      "joinDate": "2022-01-15",
+      "totalClasses": 62,
+      "classesPerStripe": 8,
+      "classesSinceStripe": 5,
+      "beltSince": "2024-06-01",
+      "bio": "Enthusiastic student who loves roundhouse kicks!",
+      "badges": [
+        {"name": "First Class!", "level": "Bronze", "description": "Completed first class"},
+        {"name": "Back Again", "level": "Bronze", "description": "Trained twice this week"},
+        {"name": "Warmup Warrior", "level": "Silver", "description": "Ready for warmups all month", "progress": 3, "target": 4}
+      ],
+      "goldStars": [
+        {"name": "Perfect Form", "date": "2024-11-20"},
+        {"name": "Helping Hand", "date": "2024-11-28"}
+      ]
+    },
+    {
+      "id": "mike-chen",
+      "name": "Mike Chen",
+      "displayName": "Mike Chen",
+      "rank": "Brown Belt",
+      "rankType": "stripe",
+      "is3Level": null,
+      "role": "instructor",
+      "pin": "1234",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Mike",
+      "birthday": "2010-07-22",
+      "joinDate": "2018-09-01",
+      "totalClasses": 234,
+      "classesPerStripe": 12,
+      "classesSinceStripe": 8,
+      "beltSince": "2023-11-15",
+      "bio": "Junior instructor helping with beginner classes.",
+      "badges": [
+        {"name": "Leadership Rising", "level": "Gold", "description": "Assists with classes regularly"},
+        {"name": "Brown Belt Elite", "level": "Gold", "description": "Achieved Brown Belt"},
+        {"name": "Mentor Award", "level": "Silver", "description": "Helps younger students"}
+      ],
+      "goldStars": [
+        {"name": "Teaching Assist", "date": "2024-11-15"},
+        {"name": "Leadership Spirit", "date": "2024-11-30"}
+      ]
+    },
+    {
+      "id": "logan-perez",
+      "name": "Logan Perez",
+      "displayName": "Logan Perez",
+      "rank": "Brown Belt",
+      "rankType": "stripe",
+      "is3Level": null,
+      "role": null,
+      "pin": "1234",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Logan",
+      "birthday": "2011-12-05",
+      "joinDate": "2019-03-10",
+      "totalClasses": 198,
+      "classesPerStripe": 12,
+      "classesSinceStripe": 10,
+      "beltSince": "2024-02-20",
+      "bio": "Hard worker with great kicks and positive energy.",
+      "badges": [
+        {"name": "Kick Master", "level": "Gold", "description": "Perfect kick technique"},
+        {"name": "Attendance Star", "level": "Silver", "description": "Never misses class"},
+        {"name": "Team Player", "level": "Bronze", "description": "Great training partner"}
+      ],
+      "goldStars": [
+        {"name": "Combo Excellence", "date": "2024-11-23"},
+        {"name": "Spirit Award", "date": "2024-12-01"}
+      ]
+    },
+    {
+      "id": "naomi-wu",
+      "name": "Naomi Wu",
+      "displayName": "Naomi Wu",
+      "rank": "Purple Belt",
+      "rankType": "stripe",
+      "is3Level": null,
+      "role": null,
+      "pin": "1234",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Naomi",
+      "birthday": "2012-08-18",
+      "joinDate": "2021-05-12",
+      "totalClasses": 142,
+      "classesPerStripe": 8,
+      "classesSinceStripe": 6,
+      "beltSince": "2024-08-10",
+      "bio": "Focused student with excellent form and technique.",
+      "badges": [
+        {"name": "Form Perfectionist", "level": "Silver", "description": "Flawless form execution"},
+        {"name": "Focus Award", "level": "Silver", "description": "Amazing concentration"},
+        {"name": "Rising Star", "level": "Bronze", "description": "Quick learner"}
+      ],
+      "goldStars": [
+        {"name": "Form Excellence", "date": "2024-11-18"},
+        {"name": "Technique Star", "date": "2024-11-25"}
+      ]
+    },
+    {
+      "id": "sarah-martinez",
+      "name": "Sarah Martinez",
+      "displayName": "Sarah Martinez",
+      "rank": "Blue Belt",
+      "rankType": "stripe",
+      "is3Level": null,
+      "role": null,
+      "pin": "1234",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah",
+      "birthday": "2014-04-25",
+      "joinDate": "2023-02-01",
+      "totalClasses": 78,
+      "classesPerStripe": 8,
+      "classesSinceStripe": 4,
+      "beltSince": "2024-09-15",
+      "bio": "Energetic student who brings positivity to every class.",
+      "badges": [
+        {"name": "Energy Boost", "level": "Bronze", "description": "Always brings great energy"},
+        {"name": "Blue Belt Achiever", "level": "Bronze", "description": "Earned Blue Belt"},
+        {"name": "Team Spirit", "level": "Bronze", "description": "Encourages classmates"}
+      ],
+      "goldStars": [
+        {"name": "Positivity Award", "date": "2024-11-10"},
+        {"name": "Teamwork Star", "date": "2024-11-22"}
+      ]
+    },
+    {
+      "id": "alex-rivera",
+      "name": "Alex Rivera",
+      "displayName": "Alex Rivera",
+      "rank": "Red Belt",
+      "rankType": "stripe",
+      "is3Level": null,
+      "role": null,
+      "pin": "1234",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Alex",
+      "birthday": "2010-06-30",
+      "joinDate": "2017-11-20",
+      "totalClasses": 287,
+      "classesPerStripe": 8,
+      "classesSinceStripe": 7,
+      "beltSince": "2024-04-05",
+      "bio": "Advanced student preparing for black belt testing.",
+      "badges": [
+        {"name": "Advanced Technician", "level": "Gold", "description": "Mastered advanced techniques"},
+        {"name": "Red Belt Elite", "level": "Gold", "description": "Achieved Red Belt"},
+        {"name": "Pre-Black Excellence", "level": "Gold", "description": "Ready for black belt test"}
+      ],
+      "goldStars": [
+        {"name": "Advanced Forms", "date": "2024-11-12"},
+        {"name": "Testing Ready", "date": "2024-12-03"}
+      ]
+    },
+    {
+      "id": "olivia-james",
+      "name": "Olivia James",
+      "displayName": "Olivia James",
+      "rank": "Orange Belt",
+      "rankType": "stripe",
+      "is3Level": null,
+      "role": null,
+      "pin": "1234",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Olivia",
+      "birthday": "2015-01-12",
+      "joinDate": "2023-08-15",
+      "totalClasses": 45,
+      "classesPerStripe": 8,
+      "classesSinceStripe": 3,
+      "beltSince": "2024-10-01",
+      "bio": "Young student with natural talent and enthusiasm.",
+      "badges": [
+        {"name": "Natural Talent", "level": "Bronze", "description": "Quick learner"},
+        {"name": "Orange Power", "level": "Bronze", "description": "Earned Orange Belt"},
+        {"name": "Enthusiasm Award", "level": "Bronze", "description": "Loves every class"}
+      ],
+      "goldStars": [
+        {"name": "Great Effort", "date": "2024-11-19"},
+        {"name": "Positive Spirit", "date": "2024-11-26"}
+      ]
+    },
+    {
+      "id": "ethan-park",
+      "name": "Ethan Park",
+      "displayName": "Ethan Park",
+      "rank": "Yellow Belt",
+      "rankType": "stripe",
+      "is3Level": null,
+      "role": null,
+      "pin": "1234",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Ethan",
+      "birthday": "2016-09-08",
+      "joinDate": "2024-06-01",
+      "totalClasses": 28,
+      "classesPerStripe": 8,
+      "classesSinceStripe": 2,
+      "beltSince": "2024-11-01",
+      "bio": "Newest yellow belt working hard on fundamentals.",
+      "badges": [
+        {"name": "First Belt", "level": "Bronze", "description": "Earned first colored belt"},
+        {"name": "Beginner Spirit", "level": "Bronze", "description": "Great attitude for learning"}
+      ],
+      "goldStars": [
+        {"name": "First Stripe", "date": "2024-11-15"}
+      ]
+    },
+    {
+      "id": "sophia-nguyen",
+      "name": "Sophia Nguyen",
+      "displayName": "Sophia Nguyen",
+      "rank": "White Belt",
+      "rankType": "stripe",
+      "is3Level": null,
+      "role": null,
+      "pin": "1234",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Sophia",
+      "birthday": "2017-02-14",
+      "joinDate": "2024-11-01",
+      "totalClasses": 8,
+      "classesPerStripe": 8,
+      "classesSinceStripe": 2,
+      "beltSince": "2024-11-01",
+      "bio": "Brand new student excited to learn karate!",
+      "badges": [
+        {"name": "Welcome!", "level": "Bronze", "description": "Started karate journey"}
+      ],
+      "goldStars": []
+    },
+    {
+      "id": "liam-anderson",
+      "name": "Liam Anderson",
+      "displayName": "Liam Anderson",
+      "rank": "Gold Belt",
+      "rankType": "stripe",
+      "is3Level": null,
+      "role": null,
+      "pin": "1234",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Liam",
+      "birthday": "2013-10-20",
+      "joinDate": "2020-07-15",
+      "totalClasses": 156,
+      "classesPerStripe": 8,
+      "classesSinceStripe": 5,
+      "beltSince": "2024-07-20",
+      "bio": "Solid mid-level student with consistent progress.",
+      "badges": [
+        {"name": "Steady Progress", "level": "Silver", "description": "Consistent improvement"},
+        {"name": "Gold Achievement", "level": "Silver", "description": "Earned Gold Belt"},
+        {"name": "Reliable Student", "level": "Bronze", "description": "Always prepared"}
+      ],
+      "goldStars": [
+        {"name": "Consistency Award", "date": "2024-11-14"},
+        {"name": "Progress Star", "date": "2024-11-27"}
+      ]
+    },
+    {
+      "id": "ava-collins",
+      "name": "Ava Collins",
+      "displayName": "Ava Collins",
+      "rank": "Purple Belt",
+      "rankType": "stripe",
+      "is3Level": null,
+      "role": null,
+      "pin": "1234",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Ava",
+      "birthday": "2012-05-17",
+      "joinDate": "2021-01-10",
+      "totalClasses": 167,
+      "classesPerStripe": 8,
+      "classesSinceStripe": 7,
+      "beltSince": "2024-05-15",
+      "bio": "Technical student who loves learning new combinations.",
+      "badges": [
+        {"name": "Combo Master", "level": "Silver", "description": "Excellent combination skills"},
+        {"name": "Purple Pride", "level": "Silver", "description": "Achieved Purple Belt"},
+        {"name": "Detail Oriented", "level": "Bronze", "description": "Perfect technique focus"}
+      ],
+      "goldStars": [
+        {"name": "Combination Excellence", "date": "2024-11-16"},
+        {"name": "Technique Award", "date": "2024-11-29"}
+      ]
+    },
+    {
+      "id": "noah-taylor",
+      "name": "Noah Taylor",
+      "displayName": "Noah Taylor",
+      "rank": "Green Belt",
+      "rankType": "stripe",
+      "is3Level": null,
+      "role": null,
+      "pin": "1234",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Noah",
+      "birthday": "2014-11-03",
+      "joinDate": "2022-09-05",
+      "totalClasses": 89,
+      "classesPerStripe": 8,
+      "classesSinceStripe": 4,
+      "beltSince": "2024-08-20",
+      "bio": "Growing student with improving focus and skill.",
+      "badges": [
+        {"name": "Growth Mindset", "level": "Bronze", "description": "Always improving"},
+        {"name": "Green Belt Achiever", "level": "Bronze", "description": "Earned Green Belt"},
+        {"name": "Focus Builder", "level": "Bronze", "description": "Better concentration each class"}
+      ],
+      "goldStars": [
+        {"name": "Improvement Award", "date": "2024-11-21"},
+        {"name": "Focus Star", "date": "2024-12-02"}
+      ]
+    },
+    {
+      "id": "isabella-kim",
+      "name": "Isabella Kim",
+      "displayName": "Isabella Kim",
+      "rank": "Blue Belt",
+      "rankType": "stripe",
+      "is3Level": null,
+      "role": null,
+      "pin": "1234",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Isabella",
+      "birthday": "2013-07-28",
+      "joinDate": "2022-04-20",
+      "totalClasses": 112,
+      "classesPerStripe": 8,
+      "classesSinceStripe": 6,
+      "beltSince": "2024-06-10",
+      "bio": "Dedicated student with strong fundamentals.",
+      "badges": [
+        {"name": "Fundamentals Master", "level": "Silver", "description": "Perfect basics"},
+        {"name": "Blue Belt Elite", "level": "Bronze", "description": "Earned Blue Belt"},
+        {"name": "Dedicated Practitioner", "level": "Bronze", "description": "Never gives up"}
+      ],
+      "goldStars": [
+        {"name": "Basic Excellence", "date": "2024-11-13"},
+        {"name": "Dedication Award", "date": "2024-11-24"}
+      ]
+    },
+    {
+      "id": "mason-white",
+      "name": "Mason White",
+      "displayName": "Mason White",
+      "rank": "Brown Belt",
+      "rankType": "stripe",
+      "is3Level": null,
+      "role": null,
+      "pin": "1234",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Mason",
+      "birthday": "2011-03-11",
+      "joinDate": "2018-10-15",
+      "totalClasses": 245,
+      "classesPerStripe": 12,
+      "classesSinceStripe": 11,
+      "beltSince": "2023-12-05",
+      "bio": "Near black belt with exceptional skill and maturity.",
+      "badges": [
+        {"name": "Almost There", "level": "Gold", "description": "One stripe from black belt test"},
+        {"name": "Brown Belt Master", "level": "Gold", "description": "Mastered brown belt curriculum"},
+        {"name": "Leadership Potential", "level": "Silver", "description": "Future instructor material"}
+      ],
+      "goldStars": [
+        {"name": "Advanced Excellence", "date": "2024-11-11"},
+        {"name": "Leadership Spirit", "date": "2024-11-28"},
+        {"name": "Pre-Black Ready", "date": "2024-12-05"}
+      ]
+    },
+    {
+      "id": "charlotte-davis",
+      "name": "Charlotte Davis",
+      "displayName": "Charlotte Davis",
+      "rank": "Red Belt",
+      "rankType": "stripe",
+      "is3Level": null,
+      "role": null,
+      "pin": "1234",
+      "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=Charlotte",
+      "birthday": "2011-08-09",
+      "joinDate": "2018-02-20",
+      "totalClasses": 264,
+      "classesPerStripe": 8,
+      "classesSinceStripe": 5,
+      "beltSince": "2024-09-01",
+      "bio": "Advanced student with precision and power.",
+      "badges": [
+        {"name": "Power & Precision", "level": "Gold", "description": "Perfect balance of force and control"},
+        {"name": "Red Belt Elite", "level": "Gold", "description": "Achieved Red Belt"},
+        {"name": "Advanced Warrior", "level": "Gold", "description": "Top tier techniques"}
+      ],
+      "goldStars": [
+        {"name": "Power Techniques", "date": "2024-11-17"},
+        {"name": "Precision Award", "date": "2024-11-30"},
+        {"name": "Advanced Spirit", "date": "2024-12-04"}
+      ]
+    }
+  ]
+}

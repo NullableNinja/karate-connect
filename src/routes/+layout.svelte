@@ -6,6 +6,7 @@
 	import { onMount } from 'svelte';
 	import { page } from '$app/stores';
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 	import { currentUser } from '$lib/stores/auth.js';
 
 	let showConfetti = false;
@@ -21,7 +22,7 @@
 		const hasUser = !!$currentUser;
 
 		if (isProtected && !hasUser) {
-			goto('/login');
+			goto(`${base}/login`);
 		}
 
 		// Check for birthday

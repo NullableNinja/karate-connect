@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 	import { currentUser, isAuthenticated } from '$lib/stores/auth.js';
 	import { posts, createPost, toggleFistbump } from '$lib/stores/social.js';
 	import PostCard from '$lib/components/PostCard.svelte';
@@ -39,7 +40,7 @@
 
 	onMount(() => {
 		if (!$isAuthenticated) {
-			goto('/login');
+			goto(`${base}/login`);
 		}
 		
 		// Scroll detection with hysteresis to prevent jitter

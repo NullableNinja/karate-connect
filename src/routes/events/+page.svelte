@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 	import { isAuthenticated, currentUser } from '$lib/stores/auth.js';
 	import KarateGi from '$lib/components/icons/KarateGi.svelte';
 	import Calendar from '$lib/components/icons/Calendar.svelte';
@@ -9,7 +10,7 @@
 
 	onMount(() => {
 		if (!$isAuthenticated) {
-			goto('/login');
+			goto(`${base}/login`);
 		}
 	});
 

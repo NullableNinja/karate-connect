@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 	import { currentUser, isAuthenticated } from '$lib/stores/auth.js';
 	import BeltTag from '$lib/components/BeltTag.svelte';
 	import TrainingCalendar from '$lib/components/TrainingCalendar.svelte';
@@ -103,7 +104,7 @@
 
 	onMount(() => {
 		if (!$isAuthenticated) {
-			goto('/login');
+			goto(`${base}/login`);
 		}
 	});
 </script>

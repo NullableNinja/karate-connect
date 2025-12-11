@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 	import { currentUser, isAuthenticated } from '$lib/stores/auth.js';
 	import { journeyEntries, journeyStats } from '$lib/stores/journey.js';
 	import JourneyEntry from '$lib/components/JourneyEntry.svelte';
@@ -12,7 +13,7 @@
 
 	onMount(() => {
 		if (!$isAuthenticated) {
-			goto('/login');
+			goto(`${base}/login`);
 		}
 		journeyEntries.init();
 	});

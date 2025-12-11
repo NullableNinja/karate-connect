@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 	import { currentUser, isAuthenticated } from '$lib/stores/auth.js';
 	import { messages, markMessageAsRead } from '$lib/stores/social.js';
 	import Message from '$lib/components/icons/Message.svelte';
@@ -43,7 +44,7 @@
 
 	onMount(() => {
 		if (!$isAuthenticated) {
-			goto('/login');
+			goto(`${base}/login`);
 		}
 	});
 

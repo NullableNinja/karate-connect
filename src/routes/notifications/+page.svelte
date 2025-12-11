@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 	import { isAuthenticated } from '$lib/stores/auth.js';
 	import { notifications, markNotificationAsRead } from '$lib/stores/social.js';
 	import Bell from '$lib/components/icons/Bell.svelte';
@@ -9,7 +10,7 @@
 
 	onMount(() => {
 		if (!$isAuthenticated) {
-			goto('/login');
+			goto(`${base}/login`);
 		}
 	});
 
